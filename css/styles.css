@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+img {
+  width: 100%;
+}
+
+header {
+  background: #fff;
+  text-align: center;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+}
+
+.nav-toggle {
+  display: none;
+}
+
+.nav-toggle-label {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: 2em ;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.nav-toggle-label span,
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+  display: block;
+  background: #000;
+  height: 3px;
+  width: 2em;
+  border-radius: 2px;
+  position: relative;
+  
+}
+
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+  content: '';
+  position: absolute;
+}
+
+.nav-toggle-label span::before {
+  bottom: 7px;
+}
+
+.nav-toggle-label span::after {
+  top: 7px;
+}
+
+nav {
+  position: absolute;
+  text-align: left;
+  right: 0;
+  background: #fff;
+  width: 75%;
+  transform: scale(1, 0);
+  transition: transform 400ms ease-in-out;
+  transform: translate(100%, 0); 
+}
+
+.nav-items {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-left: 1em;
+}
+
+nav li {
+  margin-bottom: 1em;
+  margin-right: 1em;
+}
+
+nav a {
+  color: #000;
+  text-decoration: none;
+  font-weight: 700;
+  text-transform: uppercase;
+  opacity: 0;
+  transition: opacity 150ms ease-in-out 250ms;
+}
+
+nav a:hover {
+  color: #008248;
+}
+
+.btns {
+  opacity: 0;
+  transition: opacity 250ms ease-in-out 250ms;
+  margin: .75em 0;
+}
+
+.logo {
+  margin: 0;
+  width: 5em;
+}
+
+.nav-toggle:checked ~ nav {
+ transform: scale(1,1);
+}
+
+.nav-toggle:checked ~ nav a {
+  opacity: 1;
+  transition: opacity 150ms ease-in-out;
+}
+
+.nav-toggle:checked ~ nav div.btns {
+  opacity: 1;
+  transition: opacity 150ms ease-in-out;
+}

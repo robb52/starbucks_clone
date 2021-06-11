@@ -28,6 +28,7 @@ header {
   position: fixed;
   z-index: 999;
   width: 100%;
+  border-bottom: 2px solid rgb(198, 197, 197);
 }
 
 .nav-toggle {
@@ -48,7 +49,7 @@ header {
 .nav-toggle-label span::before,
 .nav-toggle-label span::after {
   display: block;
-  background: #000;
+  background: rgb(134, 133, 133);
   height: 3px;
   width: 2em;
   border-radius: 2px;
@@ -76,16 +77,23 @@ nav {
   right: 0;
   background: #fff;
   width: 75%;
+  border-left: 2px solid rgb(198, 197, 197);
   transform: scale(1, 0);
   transition: transform 400ms ease-in-out;
   transform: translate(100%, 0); 
+  border-top: 2px solid rgb(198, 197, 197);
 }
 
 .nav-items {
   margin: 0;
   padding: 0;
   list-style: none;
-  margin-left: 1em;
+  margin: 2em;
+  height: 100vh;
+}
+
+.nav-item {
+  padding: 1em 0;
 }
 
 nav li {
@@ -96,7 +104,7 @@ nav li {
 nav a {
   color: #000;
   text-decoration: none;
-  font-weight: 700;
+  font-weight: 500;
   text-transform: uppercase;
   opacity: 0;
   transition: opacity 150ms ease-in-out 250ms;
@@ -110,6 +118,55 @@ nav a:hover {
   opacity: 0;
   transition: opacity 250ms ease-in-out 250ms;
   margin: .75em 0;
+  border-top: 2px solid rgb(207, 207, 207);
+  padding-top: 2em;
+}
+
+.signin-btn,
+.join-btn {
+  padding: .75em 1.5em;
+  border-radius: 20px;
+  border: none;
+  font-weight: 600;
+  font-size: .75rem;
+  margin-bottom: 2em;
+}
+
+.signin-btn {
+  margin-right: 1em;
+  background: #fff;
+  border: 1px solid rgb(45, 45, 45);
+}
+
+.signin-btn:hover {
+  background: rgb(233, 231, 231);
+  transition: 300ms;
+}
+
+.join-btn {
+  background: #000;
+  color: #fff;
+  border: 1px solid #000;
+}
+
+.join-btn:hover {
+  opacity: .7;
+  transition: 300ms;
+}
+
+.location a {
+  text-transform: none;
+  font-size: .85rem;
+  font-weight: 600;
+}
+
+.location:hover {
+  color: #008248;
+}
+
+i {
+  margin-right: .65em;
+  font-size: 1.3rem;
 }
 
 .logo {
@@ -129,4 +186,74 @@ nav a:hover {
 .nav-toggle:checked ~ nav div.btns {
   opacity: 1;
   transition: opacity 150ms ease-in-out;
+}
+
+
+@media (min-width: 650px) {
+  .nav-toggle-label {
+    display: none;
+  }
+
+  header {
+    display: flex;
+    align-items: center;
+    height: 6em;
+  }
+
+  .logo-img {
+    width: 6em;
+  }
+
+  nav {
+    all: unset;
+    font-size: .85rem;
+    width: 100%;
+  }
+
+  nav a {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+    opacity: 1;
+  }
+
+  .nav-items {
+    height: auto;
+    display: flex;
+   
+    grid-template-rows: 1fr;
+    border: 1px solid green;
+  }
+
+  nav li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+  }
+
+  button {
+    margin-right: 1em;
+    padding: .5em 1.5em;
+    border-radius: 10em;
+    border: none;
+  }
+
+  .btns {
+    display: flex;
+    border: 1px solid red;
+    opacity: 1;
+    margin-left: auto;
+    margin-right: 2em;
+
+  }
+
+  .location {
+    display: flex;
+    font-size: .70rem;
+    color: red;
+    order: -9999;
+    margin: 0 2em;
+  }
+
+  
 }

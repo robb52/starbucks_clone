@@ -161,6 +161,10 @@ nav a:hover {
   transition: 300ms;
 }
 
+.join-in:hover {
+  text-decoration: none;
+}
+
 .location a {
   text-transform: none;
   font-size: .85rem;
@@ -196,17 +200,37 @@ i {
 }
 
 .rewards-banner {
-  margin-top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
   background: #1e3932; 
 }
 
 .reward-title {
   text-transform: uppercase;
   font-size: .85rem;
-  margin: 4em 0 2em 0;
+  letter-spacing: 1px;
+  margin: 5em 0 2.5em 0;
   color: #fff;
   background: #1e3932;
-  padding: 2em 0 1em 1.4em;
+  padding: 2em 0 1em 1em;
+}
+
+.banner-btn {
+  padding: .60em 1.2em;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: .80rem;
+  border: 1px solid #fff;
+  background: #1e3932;
+  color: #fff;
+  margin-right: 1em;
+  cursor: pointer;
+}
+
+.banner-btn:hover {
+  background: rgba(88, 88, 88, 0.7);
+  transition: 300ms;
 }
 
 .hero {
@@ -306,6 +330,143 @@ i {
 .learn-link {
   color: #008248;
 }
+
+.favorites-sec {
+ text-align: center;
+ background: #e4f3ee;
+ width: 100vw;
+ box-shadow: 0 8px 6px -6px black;
+}
+
+.favorites-title {
+  padding-top: 3em;
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+}
+
+.star-items {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.star-item {
+  list-style: none;
+  font-size: 1.3rem;
+  padding: 1em 0;
+  margin: 0 .5em;
+  font-weight: 600;
+  margin: 0 auto;
+}
+
+.number.current {
+  border-bottom: 3px solid green;
+  padding-bottom: 1em;
+ 
+}
+
+.number {
+  text-decoration: none;
+  color: #000;
+}
+
+.star {
+  color: goldenrod;
+  font-size: .80em;
+}
+
+.customize {
+  background: #d4e9e2;
+  text-align: center;
+}
+
+.coffee-img {
+  width: 100%;
+  margin-top: 2em;
+}
+
+.customize-body {
+  margin: 2em 0;
+}
+
+.customize-title {
+  margin-bottom: 1em;
+}
+
+.customize-desc{
+  font-size: .85rem;
+  margin: 0 2em;
+  padding-bottom: 3em;
+  line-height: 1.7;
+}
+
+.endless-icons {
+  margin: 0 1em;
+}
+
+.endless {
+  text-align: center;
+}
+
+.endless-title {
+  margin: 3em 0 1em;
+}
+
+.endless-desc {
+  font-size: .85rem;
+  margin: 0 1em 2em;
+}
+
+.fun-freebies-icon,
+.order-icon,
+.get-icon {
+  display: flex;
+  width: 100%;
+  margin-top: 4em;
+}
+
+.fun-img,
+.order-img,
+.get-img {
+  width: 7em;
+  height: 7em;
+  margin-right: 1em;
+}
+
+.fun-body,
+.order-pay-body ,
+.get-body {
+  text-align: left;
+}
+
+.get-body {
+  margin-bottom: 4em;
+}
+
+.fun-title,
+.order-pay-title,
+.get-title {
+  font-size: 1rem;
+  margin-bottom: 1em;
+}
+
+.fun-desc,
+.order-pay-desc,
+.get-desc {
+  font-size: .85rem;
+  margin-bottom: 1em;
+}
+
+.learn-more {
+  font-size: .85rem;
+  color: #008248;
+}
+
+.learn-more:hover {
+  text-decoration: none;
+}
+
+
 
 
 

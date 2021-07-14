@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
 
 *,
 *::before,
@@ -273,6 +273,7 @@ i {
 .hero-sub a {
   display: flex;
   justify-content: center;
+  font-size: .90rem;
   color: #000;
   margin: -1em;
   margin-bottom: 10em;
@@ -466,8 +467,74 @@ i {
   text-decoration: none;
 }
 
+.cash-sec {
+  background: #f3f1e7;
+  padding: 3em 1em;
+}
 
+.cash {
+  text-align: center;
+}
 
+.cash-title {
+  margin-bottom: 1em;
+}
+
+.cash-desc {
+  font-size: .85rem;
+  margin-bottom: 3em;
+}
+
+.one-per,
+.two-per,
+.three-per {
+  border-bottom: 1px solid rgb(207, 207, 207);
+}
+
+.one-per p,
+.two-per p,
+.three-per p {
+  font-size: .85rem;
+}
+
+.two-star,
+.three-star {
+  padding-top: 2em;
+}
+
+.scan,
+.preload,
+.earn {
+  margin-bottom: 4em;
+}
+
+.scan-img,
+.save-img,
+.preload-img,
+.register-img,
+.earn-img {
+  width: 7em;
+  margin-right: 1em;
+}
+
+.scan-body,
+.save-body,
+.preload-body,
+.reg-body,
+.earn-body {
+  display: flex;
+  margin-top: 2em;
+}
+
+.scan-title,
+.save-title,
+.preload-title,
+.reg-title,
+.earn-title {
+  font-weight: 600;
+  font-size: .95rem;
+  margin-bottom: 1em;
+}
 
 
 
